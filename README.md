@@ -13,13 +13,15 @@ The implementation is based on paper[[1](https://arxiv.org/abs/2106.04803v2)].
   * CoAtNet-3
   * CoAtNet-4
   * CoAtNet-5
+  * CoAtNet-6
+  * CoAtNet-7
 - Pre-trained weight
   * X
 
 ## Requirements
 
 - Python 3
-- tensorflow 2
+- tensorflow 2.4▲
 
 ## Reference
 

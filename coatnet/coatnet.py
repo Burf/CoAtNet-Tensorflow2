@@ -75,9 +75,6 @@ class MBConv(tf.keras.layers.Layer):
         config["residual"] = self.residual
         config["momentum"] = self.momentum
         config["epsilon"] = self.epsilon
-        config["convolution"] = self.convolution
-        config["activation"] = self.activation
-        config["kernel_initializer"] = self.kernel_initializer
         return config
 
 class MultiHeadSelfAttention(tf.keras.layers.Layer):
@@ -224,8 +221,6 @@ class ConvTransformer(tf.keras.layers.Layer):
         config["out_dim"] = self.out_dim
         config["epsilon"] = self.epsilon
         config["dropout_rate"] = self.dropout_rate
-        config["activation"] = self.activation
-        config["kernel_initializer"] = self.kernel_initializer
         return config
     
 def coatnet(x, n_class = 1000, include_top = True, n_depth = [2, 2, 6, 14, 2], n_feature = [64, 96, 192, 384, 768], block = ["C", "M", "M", "T", "T"], stage_stride_size = 2, expand_ratio = 4, se_ratio = 4, dropout_rate = 0., activation = tf.keras.activations.gelu, name = ""):
